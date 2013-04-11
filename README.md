@@ -65,7 +65,7 @@ The `filter` in the above configuration can be changed by using one of the avail
 
 ### Sorting
 
-As described in the introduction of this widget, the tasks can be sorted by date (as shown above) or by priority. Simply fill in `priority` instead of `date` as the value for `sort_by`:
+As described in the introduction of this widget, the tasks can be sorted by date (as shown above) or by priority. Simply fill in `priority` instead of `date` as the value for `sort_by` to do just that:
 
 ```ruby
 sort_by = "priority"
