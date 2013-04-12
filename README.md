@@ -12,7 +12,7 @@ gem "milkman"
 
 and run `bundle install`.
 
-## Installation
+## Authorization
 
 To actually use the widget on your own Dashboard, you'll have to [request](https://www.rememberthemilk.com/services/api/keys.rtm) an API key and shared secret from Remember The Milk. With those variables you'll be able to retrieve an authentication token. The three of them are required to use Milkman. For detailed information about authorizing Milkman, check the gem's [documentation](https://github.com/kevintuhumury/milkman#authorize-milkman). You'll need to read "Apply for an API key and shared secret". 
 
