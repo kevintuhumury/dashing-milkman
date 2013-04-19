@@ -14,7 +14,7 @@ and run `bundle install`.
 
 ## Authorization
 
-To actually use the widget on your own Dashboard, you'll have to [request](https://www.rememberthemilk.com/services/api/keys.rtm) an API key and shared secret from Remember The Milk. With those variables you'll be able to retrieve an authentication token. The three of them are required to use Milkman. For detailed information about authorizing Milkman, check the gem's [documentation](https://github.com/kevintuhumury/milkman#authorize-milkman). You'll need to read "Apply for an API key and shared secret". 
+To actually use the widget on your own Dashboard, you'll have to [request](https://www.rememberthemilk.com/services/api/keys.rtm) an API key and shared secret from Remember The Milk. With those variables you'll be able to retrieve an authentication token. The three of them are required to use Milkman. For detailed information about authorizing Milkman, check the gem's [documentation](https://github.com/kevintuhumury/milkman#authorize-milkman). You'll need to read "Apply for an API key and shared secret".
 
 In short, you'll need to run the `milkman` executable:
 
@@ -26,7 +26,7 @@ Follow it's instructions (you'll have to copy an authorization URL) and the inst
 
 ## Usage
 
-To use this widget, copy `remember_the_milk.coffee`, `remember_the_milk.html` and `remember_the_milk.scss` into the `/widgets/remember_the_milk` directory of your dashboard. Copy `remember-the-milk.png` into the `/assets/images` directory and put the `remember_the_milk.rb` file in your `/jobs` folder.
+To use this widget, copy `remember_the_milk.coffee`, `remember_the_milk.html` and `remember_the_milk.sass` into the `/widgets/remember_the_milk` directory of your dashboard. Copy `remember-the-milk.png` into the `/assets/images` directory and put the `remember_the_milk.rb` file in your `/jobs` folder.
 
 To include the widget on your dashboard, add the following snippet to the dashboard layout file:
 
