@@ -73,4 +73,4 @@ sort_by = "priority"
 
 ## Preview
 
-![image](https://f.cloud.github.com/assets/412952/369848/d9fbb044-a2e0-11e2-9740-ddb95ea05447.png)
+![image](https://f.cloud.github.com/assets/412952/406581/11432ab6-aaa5-11e2-9b76-317e613544b4.png)
