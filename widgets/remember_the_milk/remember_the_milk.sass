@@ -1,5 +1,7 @@
+$background-color: #0073c7
+
 .widget-remember-the_milk
-  background-color: #0073c7
+  background-color: $background-color
 
   h1
     background-image: url("remember-the-milk.png")
@@ -27,6 +29,13 @@
       &.date
         width: 55px
         text-align: right
+
+  p
+    &.updated-at
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-size: 10px
+      color: lighten($background-color, 15%)
 
   .priority
     display: inline-block
