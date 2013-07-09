@@ -30,6 +30,6 @@ SCHEDULER.every "5m", first_in: 0 do |job|
       end
     end.sort_by { |task| task[sort_by.to_sym] }
 
-    send_event "remember-the-milk", { items: tasks.take(max_items) }
+    send_event "milkman", { items: tasks.take(max_items) }
   end
 end

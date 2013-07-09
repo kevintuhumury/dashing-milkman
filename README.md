@@ -1,10 +1,10 @@
-# Remember The Milk Dashing widget
+# Milkman Dashing widget
 
-[Remember The Milk](https://www.rememberthemilk.com/) (RTM) widget for [Dashing](http://shopify.github.com/dashing), which uses the [Milkman](https://github.com/kevintuhumury/milkman) gem. It displays the tasks sorted by date (by default), but it can also sort the tasks by priority. An example of the former can be viewed [below](https://github.com/kevintuhumury/dashing-rememberthemilk#preview).
+Milkman widget for [Dashing](http://shopify.github.com/dashing), which uses the [Milkman](https://github.com/kevintuhumury/milkman) gem to retrieve tasks from [Remember The Milk](https://www.rememberthemilk.com/) (RTM). It displays the tasks sorted by date (by default), but it can also sort the tasks by priority. An example of the former can be viewed [below](https://github.com/kevintuhumury/dashing-milkman#preview).
 
 ## Dependencies
 
-[Milkman](https://github.com/kevintuhumury/milkman) is a dependency of the Remember The Milk widget, which has basically been created especially for this widget. So, add `milkman` to the Gemfile of your Dashing dashboard:
+[Milkman](https://github.com/kevintuhumury/milkman) is a dependency of the Milkman widget, which has basically been created especially for this widget. So, add `milkman` to the Gemfile of your Dashing dashboard:
 
 ```ruby
 gem "milkman"
@@ -22,21 +22,21 @@ In short, you'll need to run the `milkman` executable:
 milkman authorize API_KEY SHARED_SECRET
 ```
 
-Follow it's instructions (you'll have to copy an authorization URL) and the instructions on the Remember The Milk site to authorize Milkman. Once you've done that you'll receive a `frob` value. Copy and paste that in the shell. The description which follows will include the three variables you'll need to copy to the job file of this widget, as shown in the [usage](https://github.com/kevintuhumury/dashing-rememberthemilk#usage) section.
+Follow it's instructions (you'll have to copy an authorization URL) and the instructions on the Remember The Milk site to authorize Milkman. Once you've done that you'll receive a `frob` value. Copy and paste that in the shell. The description which follows will include the three variables you'll need to copy to the job file of this widget, as shown in the [usage](https://github.com/kevintuhumury/dashing-milkman#usage) section.
 
 ## Usage
 
-To use this widget, copy `remember_the_milk.coffee`, `remember_the_milk.html` and `remember_the_milk.sass` into the `/widgets/remember_the_milk` directory of your dashboard. Copy `remember-the-milk.png` into the `/assets/images` directory and put the `remember_the_milk.rb` file in your `/jobs` folder.
+To use this widget, copy `milkman.coffee`, `milkman.html` and `milkman.sass` into the `/widgets/milkman` directory of your dashboard. Copy `milkman.png` into the `/assets/images` directory and put the `milkman.rb` file in your `/jobs` folder.
 
 To include the widget on your dashboard, add the following snippet to the dashboard layout file:
 
 ```ruby
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-  <div data-id="remember-the-milk" data-view="RememberTheMilk"></div>
+  <div data-id="milkman" data-view="Milkman"></div>
 </li>
 ```
 
-On to the next part. Enter the API key, shared secret and authentication token in the `remember_the_milk.rb` job file:
+On to the next part. Enter the API key, shared secret and authentication token in the `milkman.rb` job file:
 
 ```ruby
 # milkman configuration
@@ -50,7 +50,7 @@ And your done. That's really it. Now... use it!
 
 ## Configuration
 
-By default the Remember The Milk widget will display all incomplete tasks, which are due before today and will be overdue tomorrow. So, all tasks for today.
+By default the Milkman widget will display all incomplete tasks, which are due before today and will be overdue tomorrow. So, all tasks for today.
 
 ```ruby
 # widget configuration
