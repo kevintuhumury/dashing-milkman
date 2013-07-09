@@ -74,3 +74,7 @@ sort_by = "priority"
 ## Preview
 
 ![image](https://f.cloud.github.com/assets/412952/406581/11432ab6-aaa5-11e2-9b76-317e613544b4.png)
+
+## Copyright
+
+Copyright 2013 Kevin Tuhumury. Released under the MIT License. This product uses the Remember The Milk API, but is not endorsed or certified by Remember The Milk.
