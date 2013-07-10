@@ -73,7 +73,7 @@ sort_by = "priority"
 
 ## Preview
 
-![image](https://f.cloud.github.com/assets/412952/406581/11432ab6-aaa5-11e2-9b76-317e613544b4.png)
+![image](https://f.cloud.github.com/assets/412952/778301/b6b622aa-e9ac-11e2-9d5e-8184a47c4107.png)
 
 ## Copyright
 
