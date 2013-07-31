@@ -10,7 +10,23 @@ Milkman widget for [Dashing](http://shopify.github.com/dashing), which uses the 
 gem "milkman"
 ```
 
-and run `bundle install`.
+This widget has been [HAML](http://haml.info/)ified (we're using a HAML template in the `/widgets/milkman` directory instead of an HTML template), so besides the above you'll also need to add `haml` to the Gemfile (if you haven't already):
+
+```ruby
+gem "haml"
+```
+
+and require it in your `config.ru` file right below the require of dashing itself. So the first few lines of your `config.ru` should look something like the following:
+
+```ruby
+require 'dashing'
+require 'haml'
+
+configure do
+...
+```
+
+Now run `bundle install`.
 
 ## Authorization
 
@@ -26,7 +42,7 @@ Follow it's instructions (you'll have to copy an authorization URL) and the inst
 
 ## Usage
 
-To use this widget, copy `milkman.coffee`, `milkman.html` and `milkman.sass` into the `/widgets/milkman` directory of your dashboard. Copy `milkman.png` into the `/assets/images` directory and put the `milkman.rb` file in your `/jobs` folder.
+To use this widget, copy `milkman.coffee`, `milkman.haml` and `milkman.sass` into the `/widgets/milkman` directory of your dashboard. Copy `milkman.png` into the `/assets/images` directory and put the `milkman.rb` file in your `/jobs` folder.
 
 To include the widget on your dashboard, add the following snippet to the dashboard layout file:
 
@@ -34,6 +50,13 @@ To include the widget on your dashboard, add the following snippet to the dashbo
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
   <div data-id="milkman" data-view="Milkman"></div>
 </li>
+```
+
+When you're using a Hamlified dashboard layout (hey, you're already using a Hamlified widget, so why not Hamlify your dashboard layout?), you could also do the following:
+
+```ruby
+%li(data-row="1" data-col="1" data-sizex="1" data-sizey="1")
+  %div(data-id="milkman" data-view="Milkman")
 ```
 
 On to the next part. Enter the API key, shared secret and authentication token in the `milkman.rb` job file:

@@ -1,0 +1,9 @@
+%h1(data-bind="title")
+
+%ul
+  %li(data-foreach-item="items")
+    %span(data-bind-class="item.priority | prepend 'priority priority-'")
+    %span(class="name" data-bind="item.name")
+    %span(class="date" data-bind="item.formatted_date")
+
+%p(class="updated-at" data-bind="updatedAtMessage")
